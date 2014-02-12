@@ -80,7 +80,7 @@ body {
 
 /*----------------------> Links And buttons <------------------*/
 a {
-  color:#;
+  color:#333333;
   outline:none;
   text-decoration:none;
   cursor:pointer;
@@ -89,20 +89,6 @@ a:hover{
   color:#;
   text-decoration:none;
 }
-
-.button{
-  display:inline-block;
-  padding:0 0 0 0;
-  margin: 0 0 0 0;
-  font-size: px;
-  line-height: px;
-  color:#;
- }
-.button:hover{
-  background:;
-  color:#000;
-}
-
 
 /*======================> Header <======================*/
 
@@ -161,6 +147,13 @@ header h1 a{
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
     border-radius: 500px;
+  }
+  .gif_title{
+    padding: 0 230px 0 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
 .blue_title{
