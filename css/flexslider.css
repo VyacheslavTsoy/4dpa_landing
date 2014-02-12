@@ -1,0 +1,51 @@
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {
+	position: relative;
+	width: 619px;
+	height: 402px;
+	margin-bottom: 31px;
+}
+.flexslider.ind1{
+	margin-bottom: 17px;
+}
+.flexslider:after{
+	height: 24px;
+	display: block;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -24px;
+	background: url(../images/slider_shadow.png) no-repeat;
+	content: "";
+}
+.flex-viewport {}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+
+/* Direction Nav */
+.flex-direction-nav a {width: 30px; height: 30px; margin: 0px 0 0; display: block;  position: absolute; top: 50%; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
+.flex-direction-nav .flex-prev {left: -36px;}
+.flexslider:hover .flex-next {right: 5px;}
+.flexslider:hover .flex-prev {left: 5px;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {}
+.flex-direction-nav .disabled {cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {position: absolute;left: 29px; bottom: 11px;}
+.flex-control-nav li {margin: 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 12px; height: 12px; display: block; background: url('../images/pags.png') 0 2px no-repeat;cursor: pointer; text-indent: -9999px;}
+.flex-control-paging li a:hover,
+.flex-control-paging li a.flex-active{ background-position:0 -15px;}
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .active {opacity: 1; cursor: default;}
+
+#slider_1{
+	margin-top: -49px;
+}
