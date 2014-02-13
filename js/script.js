@@ -41,4 +41,21 @@ $(window).load(function() {
   $(section4).waypointInit('show','80%');
   $(section5).waypointInit('show','80%');
   $(section6).waypointInit('show','80%');
+ 
 });
+
+function shuffle(o) {
+  for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+  return o;
+ };
+
+ $(document).ready(function(){
+  var $brand_cols = $('.brand_cols'),
+  $cols = $brand_cols.find('article');
+
+  $brand_cols.html(shuffle($cols));
+
+  var $prizes = $('.device_description'),
+  $prize = $prizes.find('>article');
+  $prizes.html(shuffle($prize));
+ });

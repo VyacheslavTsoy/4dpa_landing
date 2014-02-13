@@ -214,7 +214,7 @@ header h1 a{
 
 /*=====================>Timer box <===================== */
 .timer_box{
-  padding: 62px 0 104px 42px;
+  padding: 62px 0 98px 42px;
   position: relative;
   background: url(../images/timer_bg.png) 0 -80px no-repeat;
 }
@@ -268,12 +268,18 @@ header h1 a{
     border-top: 1px solid #ebebeb;
     padding: 68px 0 39px;
   }
+  .device_description .device_row:first-child .flexslider{
+    margin-top: -49px;
+  }
   .device_row.pad1{
     padding: 40px 0 0;
   }
   .device_description .device_row:first-child{
     border: none;
     padding: 0 0 38px;
+  }
+  .device_description .device_row:first-child .title2{
+    padding-top: 14px;
   }
 
   .dev_col1{
@@ -520,10 +526,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', end
   .brand_cols{
     margin-bottom: 223px;
   }
+    .brand_cols article:first-child+article{
+      min-height: 630px;
+    }
   .brand_col{
     width: 319px;
     position: relative;
-    padding-bottom: 18px;
+    padding-bottom: 20px;
+    min-height: 578px;
   }
     .brand_col:after{
       display: block;
@@ -545,7 +555,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', end
     }
   .brand_col2{
     margin: 0 1px;
-    padding-bottom: 16px;
     background: #1470cf;
   }
     .brand_col2:after{
