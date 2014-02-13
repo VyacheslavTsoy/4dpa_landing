@@ -708,116 +708,118 @@ a:hover{
     transition: all 0.3s ease;
 }
 
-/*=========================> Animations <======================*/
+@media only screen and (min-width: 1024px) {
+ /*=========================> Animations <======================*/
 
-.obj1{
-  -moz-transform: translateY(-30px);
-  -webkit-transform: translateY(-30px);
-  -o-transform: translateY(-30px);
-  -ms-transform: translateY(-30px);
-  transform: translateY(-30px);
-}
-.obj2{
-  -moz-transform: translateX(-30px);
-  -webkit-transform: translateX(-30px);
-  -o-transform: translateX(-30px);
-  -ms-transform: translateX(-30px);
-  transform: translateX(-30px);
-}
-.obj3,
-.timer_box:after{
-  -moz-transform: translateX(30px);
-  -webkit-transform: translateX(30px);
-  -o-transform: translateX(30px);
-  -ms-transform: translateX(30px);
-  transform: translateX(30px);
-}
-.show .obj,
-.show .timer_box:after{
-  opacity: 1;
-  -moz-transform: translateX(0px) translateY(0px);
-  -webkit-transform: translateX(0px) translateY(0px);
-  -o-transform: translateX(0px) translateY(0px);
-  -ms-transform: translateX(0px) translateY(0px);
-  transform: translateX(0px) translateY(0px);
-}
+  .obj1{
+    -moz-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  .obj2{
+    -moz-transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    -o-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  .obj3,
+  .timer_box:after{
+    -moz-transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    -o-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  .show .obj,
+  .show .timer_box:after{
+    opacity: 1;
+    -moz-transform: translateX(0px) translateY(0px);
+    -webkit-transform: translateX(0px) translateY(0px);
+    -o-transform: translateX(0px) translateY(0px);
+    -ms-transform: translateX(0px) translateY(0px);
+    transform: translateX(0px) translateY(0px);
+  }
 
-.obj,
-.timer_box:after{
-  opacity: 0;
-  -webkit-transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
-   -moz-transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
-    -ms-transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
-     -o-transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
-        transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000); }
+  .obj,
+  .timer_box:after{
+    opacity: 0;
+    -webkit-transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+     -moz-transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+      -ms-transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+       -o-transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+          transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000); }
 
-.del1{
-  transition-delay:100ms;
-}
-.del2{
-  transition-delay:200ms;
-}
-.del3{
-  transition-delay:400ms;
-}
-.del4{
-  transition-delay:600ms;
-}
-.del5{
-  transition-delay:800ms;
-}
-.del6{
-  transition-delay:1000ms;
-}
-.del7{
-  transition-delay:1200ms;
-}
-.del8{
-  transition-delay:1400ms;
-}
-.del9,
-.timer_box:after{
-  transition-delay:1600ms;
-}
-.del10{
-  transition-delay:1800ms;
-}
-.del11{
-  transition-delay:2000ms;
-}
-.del12{
-  transition-delay:2200ms;
-}
-.del13{
-  transition-delay:2400ms;
-}
-.del14{
-  transition-delay:2600ms;
-}
-.del15{
-  transition-delay:2800ms;
-}
-.del16{
-  transition-delay:3000ms;
-}
-.del17{
-  transition-delay:3200ms;
-}
-.del18{
-  transition-delay:3400ms;
-}
-.del19{
-  transition-delay:3600ms;
-}
-.del20{
-  transition-delay:3800ms;
-}
-.del21{
-  transition-delay:4000ms;
-}
-.del22{
-  transition-delay:4200ms;
-}
-.del23{
-  transition-delay:4400ms;
+  .del1{
+    transition-delay:100ms;
+  }
+  .del2{
+    transition-delay:200ms;
+  }
+  .del3{
+    transition-delay:400ms;
+  }
+  .del4{
+    transition-delay:600ms;
+  }
+  .del5{
+    transition-delay:800ms;
+  }
+  .del6{
+    transition-delay:1000ms;
+  }
+  .del7{
+    transition-delay:1200ms;
+  }
+  .del8{
+    transition-delay:1400ms;
+  }
+  .del9,
+  .timer_box:after{
+    transition-delay:1600ms;
+  }
+  .del10{
+    transition-delay:1800ms;
+  }
+  .del11{
+    transition-delay:2000ms;
+  }
+  .del12{
+    transition-delay:2200ms;
+  }
+  .del13{
+    transition-delay:2400ms;
+  }
+  .del14{
+    transition-delay:2600ms;
+  }
+  .del15{
+    transition-delay:2800ms;
+  }
+  .del16{
+    transition-delay:3000ms;
+  }
+  .del17{
+    transition-delay:3200ms;
+  }
+  .del18{
+    transition-delay:3400ms;
+  }
+  .del19{
+    transition-delay:3600ms;
+  }
+  .del20{
+    transition-delay:3800ms;
+  }
+  .del21{
+    transition-delay:4000ms;
+  }
+  .del22{
+    transition-delay:4200ms;
+  }
+  .del23{
+    transition-delay:4400ms;
+  }
 }
