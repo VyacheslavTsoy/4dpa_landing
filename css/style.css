@@ -90,6 +90,14 @@ a:hover{
   text-decoration:none;
 }
 
+.link{
+  text-decoration: underline;
+  color: #fff;
+}
+.link1:hover{
+  text-decoration: none;
+}
+
 /*======================> Header <======================*/
 
 header{
@@ -212,6 +220,25 @@ header h1 a{
     padding: 46px 0 0;
   }
 
+  .prestigio_link{
+    width: 160px;
+    height: 60px;
+    right: 20px;
+    top: 170px;
+  }
+  .philips_link{
+    width: 160px;
+    height: 60px;
+    right: 20px;
+    top: 250px;
+  }
+  .asus_link{
+    width: 160px;
+    height: 60px;
+    right: 20px;
+    top: 340px;
+  }
+
 /*=====================>Timer box <===================== */
 .timer_box{
   padding: 62px 0 98px 42px;
@@ -281,9 +308,15 @@ header h1 a{
   .device_description .device_row:first-child .title2{
     padding-top: 14px;
   }
+  .device_description .device_row:first-child+.device_row .dev_col1{
+    float: right;
+    padding: 0 0 0 20px;
+    width: 300px;
+  } 
 
   .dev_col1{
-    width: 320px;
+    width: 300px;
+    padding-right: 20px;
   }
   .dev_col2{
     width: 620px;

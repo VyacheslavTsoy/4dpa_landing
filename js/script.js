@@ -8,6 +8,9 @@ $(window).load(function() {
   $('#slider_3').flexslider({
     animation: "slide"
   });
+  $('#slider_4').flexslider({
+    animation: "fade"
+  });
 
   $.fn.waypointInit = function(classN,offset){
       return $(this).waypoint(function(direction){
