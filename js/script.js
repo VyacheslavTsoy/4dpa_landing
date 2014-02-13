@@ -1,4 +1,7 @@
 $(function() {
+  $('#slider_4').flexslider({
+    animation: "fade"
+  });
   $('#slider_1').flexslider({
     animation: "slide"
   });
@@ -8,9 +11,7 @@ $(function() {
   $('#slider_3').flexslider({
     animation: "slide"
   });
-  $('#slider_4').flexslider({
-    animation: "fade"
-  });
+  
 });
 
   function animation(){

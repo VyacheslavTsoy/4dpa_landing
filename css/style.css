@@ -144,7 +144,7 @@ header h1 a{
     background: url(../images/yellow_object3.png) no-repeat;
   }
   .gif_wrap_inner{
-    padding: 28px 207px 0 24px;
+    padding: 26px 207px 0 23px;
   }
   .gif{
     height: 358px;
@@ -157,11 +157,21 @@ header h1 a{
     border-radius: 500px;
   }
   .gif_title{
-    padding: 0 230px 0 30px;
+    padding: 0 20px 0px 30px;
     text-align: center;
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left: 0;
+    right: 0; 
+    
+  }
+  .gif_title.var1{
+    padding-bottom: 10px; 
+  }
+
+  #slider_4 .slides li{position: relative;}
+  #slider_4 .slides li.flex-active-slide{
+    
   }
 
 .blue_title{
@@ -622,7 +632,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', end
   }
 /*=====================> Paragraphs ========================*/
 
-p {margin-bottom:10px}
+p {margin-bottom:10px;width: 100%;}
 .p2{ margin-bottom:0;}
 .p3{ margin-bottom:0;}
 .p4{ margin-bottom:0;}
