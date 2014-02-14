@@ -1,15 +1,19 @@
 $(function() {
   $('#slider_4').flexslider({
-    animation: "fade"
+    animation: "fade",
+    controlNav: true
   });
   $('#slider_1').flexslider({
-    animation: "slide"
+    animation: "slide",
+    controlNav: true
   });
   $('#slider_2').flexslider({
-    animation: "slide"
+    animation: "slide",
+    controlNav: true
   });
   $('#slider_3').flexslider({
-    animation: "slide"
+    animation: "slide",
+    controlNav: true
   });
   
 });
