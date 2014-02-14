@@ -59,12 +59,12 @@ $(function() {
 
  $(document).ready(function(){
     var $brand_cols = $('.brand_cols'),
-    $cols = $brand_cols.find('article');
+    $cols = $brand_cols.find('.brand_col');
 
     $brand_cols.html(shuffle($cols));
 
     var $prizes = $('.device_description'),
-    $prize = $prizes.find('>article');
+    $prize = $prizes.find('>.device_row');
     $prizes.html(shuffle($prize));
 
     if($(window).width() > 1024){

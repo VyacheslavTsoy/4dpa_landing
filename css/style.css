@@ -173,7 +173,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', end
 
 /*======================> Header <======================*/
 
-header{
+.header{
   height: 53px;
   background: #e8ca7e;
   background: -moz-linear-gradient(top,  #e8ca7e 0%, #edd27e 100%);
@@ -185,10 +185,10 @@ header{
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', endColorstr='#edd27e',GradientType=0 );
   border-bottom: 1px solid #d5bb66;
 }
-header h1{
+.header h1{
   padding: 13px 0 0 10px;
 }
-header h1 a{
+.header h1 a{
   display:block;
   width:99px;
   height:28px;
@@ -712,7 +712,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', end
   .brand_cols{
     margin-bottom: 193px;
   }
-    .brand_cols article:first-child+article{
+    .brand_cols .brand_col:first-child+.brand_col{
       min-height: 660px;
     }
   .brand_col{
