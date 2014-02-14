@@ -374,6 +374,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
     line-height: 92px !important;
   }*/
 
+  #countbox-days1,#countbox-hours1,#countbox-mins1,#countbox-secs1,#countbox-days2,#countbox-hours2,#countbox-mins2,#countbox-secs2{
+    line-height: 89px !important;
+  }
+
   
 /*=====================> Device Description <========================*/
 .device_description{
