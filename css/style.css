@@ -336,7 +336,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
   position: relative;
   background: url(../images/timer_bg.png) 0 -80px no-repeat;
 }
-  .timer_box:after{
+  .woman{
     width: 444px;
     height: 456px;
     position: absolute;
@@ -344,7 +344,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
     right: 19px;
     top: -36px;
     background: url(../images/woman.png) no-repeat;
-    content: "";
     z-index: 20;
   }
   .timer{
@@ -399,7 +398,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
     margin-top: -49px;
   }
   .device_row.pad1{
-    padding: 40px 0 0;
+    padding-top: 45px;
   }
   .device_description .device_row:first-child{
     border: none;
@@ -634,7 +633,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', end
   .rule_icon{
     position: relative;
   }
-    .rule_icon:before{
+    .rule_icon .icon{
       display: block;
       width: 46px;
       height: 71px;
@@ -643,18 +642,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', end
       top: -5px;
       content: "";
     }
-    .rule_icon1:before{
+    .rule_icon1 .icon{
       background: url(../images/rule_icon1.png) no-repeat;
     }
     .rule_icon2{
       padding-bottom: 11px;
     }
-    .rule_icon2:before{
+    .rule_icon2 .icon{
       background: url(../images/rule_icon2.png) no-repeat;
       top: -20px;
     }
     .rule_icon3{padding-top: 7px;}
-    .rule_icon3:before{
+    .rule_icon3 .icon{
       background: url(../images/rule_icon3.png) no-repeat;
       top: -18px;
     }
@@ -680,7 +679,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', end
       .show .timing_stripe{
         height: 96%;
       }
-      .timing_stripe:after{
+      .timing_stripe .fin_icon{
         position: absolute;
         bottom: -15px;
         width: 23px;
@@ -700,7 +699,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', end
         transition-delay: 3.5s;
         content: "";
       }
-      .show .timing_stripe:after{
+      .show .timing_stripe .fin_icon{
         opacity: 1;
       }
 
@@ -930,7 +929,8 @@ a:hover{
   .del2{
     transition-delay:200ms;
   }
-  .del3{
+  .del3,
+  .device_description .device_row:first-child .dev_col1{
     transition-delay:400ms;
   }
   .del4{
@@ -942,14 +942,16 @@ a:hover{
   .del6{
     transition-delay:1000ms;
   }
-  .del7{
+  .del7,
+  .device_description .device_row:first-child .dev_col2{
     transition-delay:1200ms;
   }
   .del8{
     transition-delay:1400ms;
   }
   .del9,
-  .timer_box:after{
+  .timer_box:after,
+  .device_description .device_row:first-child + .device_row .dev_col2{
     transition-delay:1600ms;
   }
   .del10{
@@ -958,7 +960,8 @@ a:hover{
   .del11{
     transition-delay:2000ms;
   }
-  .del12{
+  .del12,
+  .device_description .device_row:first-child + .device_row .dev_col1{
     transition-delay:2200ms;
   }
   .del13{
@@ -967,13 +970,15 @@ a:hover{
   .del14{
     transition-delay:2600ms;
   }
-  .del15{
+  .del15,
+    .device_description .device_row:first-child + .device_row + .device_row .dev_col1{
     transition-delay:2800ms;
   }
   .del16{
     transition-delay:3000ms;
   }
-  .del17{
+  .del17,
+  .device_description .device_row:first-child + .device_row + .device_row .dev_col2{
     transition-delay:3200ms;
   }
   .del18{
