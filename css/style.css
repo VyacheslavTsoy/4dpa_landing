@@ -269,8 +269,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
 }
   .blue_title .special{
     font-size: 36px;
+    line-height: 42px;
     display: inline-block;
-    margin: -4px 4px 0 0;
+    margin: -11px 4px 0 0;
   }
 
 .blue_box{
