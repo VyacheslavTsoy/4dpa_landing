@@ -12,6 +12,8 @@ body {
   color:#333333;
   min-width:1000px;
   -webkit-text-size-adjust: none;
+  -ms-text-size-adjust:none;
+  text-size-adjust:none;
 }
 
 .main{
@@ -376,6 +378,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
 
   #countbox-days1,#countbox-hours1,#countbox-mins1,#countbox-secs1,#countbox-days2,#countbox-hours2,#countbox-mins2,#countbox-secs2{
     line-height: 89px !important;
+    font-family: Arial, sans-serif !important;
   }
 
   
