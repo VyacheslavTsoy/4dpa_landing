@@ -1,22 +1,4 @@
-$(function() {
-  $('#slider_4').flexslider({
-    animation: "fade",
-    controlNav: true
-  });
-  $('#slider_1').flexslider({
-    animation: "slide",
-    controlNav: true
-  });
-  $('#slider_2').flexslider({
-    animation: "slide",
-    controlNav: true
-  });
-  $('#slider_3').flexslider({
-    animation: "slide",
-    controlNav: true
-  });
-  
-});
+(function(document,$) {
 
   function animation(){
     $.fn.waypointInit = function(classN,offset){
@@ -36,44 +18,48 @@ $(function() {
         },delay);
        }
       },{ offset : offset });
-     };
+    };
 
-    var section1 = $("#section1");
-    var section2 = $("#section2");
-    var section3 = $("#section3");
-    var section4 = $("#section4");
-    var section5 = $("#section5");
-    var section6 = $("#section6");
+    $("[data-section]").each(function(i,t){
+      (i = $(t)).waypointInit.apply(t,i.data("section"));
+    });
 
-    $(section1).waypointInit('show','80%');
-    $(section2).waypointInit('show','80%');
-    $(section3).waypointInit('show','80%');
-    $(section4).waypointInit('show','80%');
-    $(section5).waypointInit('show','80%');
-    $(section6).waypointInit('show','80%');
   }
   function shuffle(o) {
-  for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-  return o;
- };
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+  }
 
- $(document).ready(function(){
+  $(document).ready(function(){
+    
+    $("[data-countdown]").each(function(i,t){
+      (i=$(t)).countDown(i.data("countdown"));
+    });
+    
+    $("[data-slider]").each(function(i,t){
+      (i = $(t)).flexslider(i.data("slider"));
+    });
+
+    // brands & prizes shiffle {{{
     var $brand_cols = $('.brand_cols'),
     $cols = $brand_cols.find('.brand_col');
 
     $brand_cols.html(shuffle($cols));
-
+    
     var $prizes = $('.device_description'),
     $prize = $prizes.find('>.device_row');
     $prizes.html(shuffle($prize));
+    // }}}
 
     if($(window).width() > 1024){
       animation();
     }
     $(window).resize(function(){
       animation();
-    })
- });
+    });
 
+  });
+
+})(document,jQuery);
 
 

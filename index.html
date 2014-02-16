@@ -15,7 +15,7 @@
 	 <script src="js/jquery.equalheights.js"></script>
 	 <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.min.js"></script>
-   <script src="js/countdown.js"></script>
+   <script src="js/countdown.jquery.js"></script>
    <script src="js/script.js"></script>
 	 
 	<!--[if lt IE 7]>
@@ -37,7 +37,6 @@
   <![endif]-->
 </head>
 <body>
-
 <!--==============================header=================================-->
    	<div class="header">
 	    <div class="main">
@@ -45,7 +44,7 @@
       </div>
     </div>
 
-    <div class="yellow_box" id="section1">
+    <div class="yellow_box" id="section1" data-section='["show","80%"]'>
       <div class="main1">
         <div class="p_rel yellow_box_slider">
           <div class="p_abs del1 obj obj2 object1">
@@ -59,7 +58,7 @@
               <!-- <div class="gif">
                 Место под ГИФ
               </div> -->
-              <div class="flexslider" id="slider_4">
+              <div class="flexslider" id="slider_4" data-slider='{"animation":"fade","controlNav":true}'>
                 <ul class="slides">
                   <li>
                     <img src="images/slide2.png" alt="">
@@ -81,28 +80,28 @@
           <a href="http://www.philips.ru/" target="_blank" class="d_block p_abs philips_link"></a>
           <a href="http://www.acer.ru/" target="_blank" class="d_block p_abs acer_link"></a>
         </div>
-        <div class="lt os obj del5 obj1 blue_title">
-          <span class="sb special">Мужчины,</span> предложите всем своим дамам заранее задуматься над тем, что они вам подарят!
+        <div class="lt noto obj del5 obj1 blue_title">
+          <span class="special">Мужчины,</span> предложите всем своим дамам заранее задуматься над тем, что они вам подарят!
         </div>
       </div>
     </div>
 
-    <div class="blue_box" id="section2">
+    <div class="blue_box" id="section2" data-section='["show","80%"]'>
       <div class="main1">
         <div class="white_bg p_rel offer_text">
           <p>Зачастую 23-го февраля мужчины получают в подарок не совсем то, что хотели – пену для бритья, бритвенные станки, дезодоранты и другую банальную мелочевку, которая сразу отправляется в дальний ящик. Повезло лишь тем мужчинам, чьи дамы творчески подходят к вопросу выборы подарка. А им есть ради чего стараться – ведь в ответ, на 8 марта, они хотят получить не менее оригинальный сюрприз.</p>
           Тем, кто хочет удивить своего мужчину интересным и творческим презентом, мы предлагаем поучаствовать в конкурсе “Подарок Настоящему Мужчине”. Участницы, сделавшие сувенир своими руками, получают возможность выиграть для своего мужчины приз от одного из наших спонсоров.
 
-          <div class="white p_abs prize obj obj1 del5">
-            <div class="prize_inner"><span>В конкурсе</span> <span class="sb os special">три призовых</span> <span>места,</span> <br>а значит, и победителей тоже будет три!</div>
+          <div class="white p_abs noto prize obj obj1 del5">
+            <div class="prize_inner"><span>В конкурсе</span> <span class="special">три призовых</span> <span>места,</span> <br>а значит, и победителей тоже будет три!</div>
           </div>
         </div>
 
         <div class="timer_box">
           <div class="white_bg timer obj obj2 del7">
-            <h2 class="os sb timer_title">До конца конкурса осталось:</h2>
+            <h2 class="noto timer_title">До конца конкурса осталось:</h2>
             <div class="countdown">
-              <script>timer();</script>
+              <div id="countbox" data-countdown='{"strDate":"2/24/2014 00:01 AM GMT+4"}'></div>
             </div>
           </div>
           <div class="woman obj obj3 del9"></div>
@@ -110,7 +109,7 @@
       </div>
     </div>
 <!--==============================Device Descrition================================-->
-    <div class="device_description" id="section3">
+    <div class="device_description" id="section3" data-section='["show","80%"]'>
     	<div class="device_row">
         <div class="main">
           <div class="clearfix">
@@ -129,7 +128,7 @@
               </dl>
             </div>
             <div class="f_left dev_col2">
-              <div class="flexslider" id="slider_1">
+              <div class="flexslider" id="slider_1" data-slider='{"animation":"slide","controlNav":true}'>
                 <ul class="slides">
                   <li>
                     <img src="images/prestigio1.jpg" alt="">
@@ -141,14 +140,14 @@
                     <img src="images/prestigio3.jpg" alt="">
                   </li>
                   <li>
-                    <img src="images/prestigio5.jpg" alt="">
+                    <img src="images/prestigio4.jpg" alt="">
                   </li>
                 </ul>
               </div>
               <div class="device_description_inner ub lt">
-                <h3 class="ub bold title2">Prestigio MultiPad PMP7880D3G</h3>
+                <h3 class="noto bold title2">Prestigio MultiPad PMP7880D3G</h3>
                 <p>Multipad 4 DIAMOND 7.85 3G - это оригинальный дизайн ультротонкого алюминиевого корпуса. «Начинка» планшета не уступает корпусу в безупречности: яркий 7,85-дюймовый IPS-экран, быстрый четырёхъядерный процессор ARM Cortex A7 с тактовой частотой 1,2 ГГц на базе чипсета MediaTek и операционная система Android 4.2 Jelly Bean с множеством предустановленных приложений для максимального удобства.</p>
-                <a href="#" class="os bold button">Читать подробнее</a>
+                <a href="#" class="noto bold button">Читать подробнее</a>
               </div>
             </div>
           </div>
@@ -172,7 +171,7 @@
               </dl>
             </div>
             <div class="f_left p_top2 dev_col2">
-              <div class="flexslider ind1" id="slider_2">
+              <div class="flexslider ind1" id="slider_2" data-slider='{"animation":"slide","controlNav":true}'>
                 <ul class="slides">
                   <li>
                     <img src="images/ceater1.jpg" alt="">
@@ -183,15 +182,12 @@
                   <li>
                     <img src="images/ceater3.jpg" alt="">
                   </li>
-                  <li>
-                    <img src="images/ceater4.jpg" alt="">
-                  </li>
                 </ul>
               </div>
               <div class="device_description_inner ub lt">
                 <h3 class="ub bold title2 t_ind">Домашний кинотеатр HTB7590</h3>
                 <p>Philips HTB7590 — это домашний кинотеатр 5.1 с 3D-направленными АС от Philips, который позволит воспроизводить любимые фильмы и музыку с дисков 3D Blu-ray.Функция CinemaPerfect HD снижает шумы и делает изображение четче, повышая качество воспроизведения.</p>
-                <a href="#" class="os bold button">Читать подробнее</a>
+                <a href="#" class="noto bold button">Читать подробнее</a>
               </div>
             </div>
           </div>
@@ -215,7 +211,7 @@
                 </dl>
               </div>
               <div class="f_left dev_col2">
-                <div class="flexslider" id="slider_3">
+                <div class="flexslider" id="slider_3" data-slider='{"animation":"slide","controlNav":true}'>
                   <ul class="slides">
                     <li>
                       <img src="images/acer1.jpg" alt="">
@@ -235,9 +231,9 @@
                   </ul>
                 </div>
                 <div class="device_description_inner ub lt">
-                  <h3 class="ub bold title2 t_ind">Ноутук Acer Aspire E</h3>
+                  <h3 class="ub bold title2 t_ind">Ноутбук Acer Aspire E</h3>
                   <p>Ноутбуки Acer Aspire E предлагают проверенные временем технологии, которые обеспечивают высокую производительность, развлечения и возможности для общения. Эти доступные ноутбуки обладают тонким и легким корпусом и в то же время оснащены мощными процессорами и дискретными графическими картами, которые позволяют справиться со всеми повседневными задачами.</p>
-                  <a href="#" class="os bold button">Читать подробнее</a>
+                  <a href="#" class="noto bold button">Читать подробнее</a>
                 </div>
               </div>
           </div>
@@ -245,14 +241,14 @@
       </div>
     </div>
 <!--==============================To DO box================================-->
-    <div class="p_rel to_do" id="section4">
+    <div class="p_rel to_do" id="section4" data-section='["show","80%"]'>
       <div class="main1">
-        <h2 class="os bold al_center title1 obj obj1 del1">Что нужно делать дамам?</h2>
+        <h2 class="noto bold al_center title1 obj obj1 del1">Что нужно делать дамам?</h2>
         <div class="wrapper">
           <div class="f_left to_do_col to_do_arrow obj obj2 del3">
             <div class="to_do_img al_center">
               <img src="images/todo_img1.png" alt="">
-              <div class="os bold to_do_title">
+              <div class="noto bold to_do_title">
                 Придумайте подарок
               </div>
             </div>
@@ -263,7 +259,7 @@
           <div class="f_left to_do_col to_do_arrow obj obj2 del6">
             <div class="to_do_img al_center">
               <img src="images/todo_img2.png" alt="">
-              <div class="os bold to_do_title">
+              <div class="noto bold to_do_title">
                 Принять участие в конкурсе
               </div>
             </div>
@@ -274,7 +270,7 @@
           <div class="f_left to_do_col obj obj2 del9">
             <div class="to_do_img al_center">
               <img src="images/todo_img3.png" alt="">
-              <div class="os bold to_do_title">
+              <div class="noto bold to_do_title">
                 Выиграть <br> приз
               </div>
             </div>
@@ -286,16 +282,16 @@
         </div>
       </div>
       <div class="big_btn_wrap  obj obj1 del12">
-        <a href="#" class="os bold big_btn">Принять участие в конкурсе!</a>
+        <a href="#" class="noto bold big_btn">Принять участие в конкурсе!</a>
       </div>
     </div>
 <!--==============================Rules box================================-->
-    <div class="rules_box" id="section5">
+    <div class="rules_box" id="section5" data-section='["show","80%"]'>
       <div class="main1">
         <div class="p_rel timing_box">
           <div class="timing_stripe"><div class="fin_icon"></div></div>
           <dl class="rules_list ub lt">
-            <dt class="os sb rule_icon rule_icon1 obj obj2 del2">
+            <dt class="noto sb rule_icon rule_icon1 obj obj2 del2">
               <div class="icon"></div>
               Условия выполнения
               <div class="sub_title">конкурсной работы и ограничения</div>
@@ -311,7 +307,7 @@
                 <li class="rules1_item">Работы, несоответствующие нормам морали и этики в конкурсе не участвуют и будут удалены Модераторами.</li>
               </ul>
             </dd>
-            <dt class="os sb rule_icon rule_icon2 obj obj1 del10">
+            <dt class="noto sb rule_icon rule_icon2 obj obj1 del10">
               <div class="icon"></div>
               Условия участия
             </dt>
@@ -319,10 +315,10 @@
               <ul class="rules_list1">
                 <li class="rules1_item">В конкурсе могут принять участие пользователи, проживающие в России или странах СНГ. </li>
                 <li class="rules1_item">В конкурсе может принять участие женская половина пользователей 4pda или жены, сестры, девушки, дочки или мамы пользователей, аккаунты которых были зарегистрированы до начала конкурса.</li> 
-                <li class="rules1_item">Победителей конкурса отберет жюри в составе представителей компаний xxx, xxx, xxx и Администрации 4pda.</li>
+                <li class="rules1_item">Победителей конкурса отберет жюри в составе представителей компаний Philips, Prestigio, Acer и Администрации 4pda.</li>
                 </ul>
             </dd>
-            <dt class="os sb rule_icon rule_icon3 obj obj2 del16">
+            <dt class="noto sb rule_icon rule_icon3 obj obj2 del16">
               <div class="icon"></div>
               Сроки проведения
             </dt>
@@ -330,7 +326,7 @@
               <ul class="rules_list1">
                 <li class="rules1_item">Конкурс стартует 17 февраля 2014 года.</li>
                 <li class="rules1_item">Конкурсные работы принимаются до 12:00 по московскому времени 24 февраля 2014 года.</li> 
-                <li class="rules1_item">Итоги конкурса будут подведены и опубликованы в течене 2 дней после окончания конкурса на сайте 4pda.»</li>
+                <li class="rules1_item">Итоги конкурса будут подведены и опубликованы в течене 2 дней после окончания конкурса на сайте 4pda.ru</li>
                 </ul>
             </dd>
           </dl>
@@ -338,7 +334,7 @@
       </div>
     </div>
 <!--============================== Brands Box================================-->
-    <div class="brands_box" id="section6">
+    <div class="brands_box" id="section6" data-section='["show","80%"]'>
       <div class="main">
         <div class="clearfix brand_cols">
           <div class="brand_col f_left brand_col1 obj obj2 del2">
@@ -367,7 +363,7 @@
           </div>
         </div>
         <div class="big_btn_wrap1 obj obj1 del6">
-          <a href="#" class="os bold big_btn">Принять участие в конкурсе!</a>
+          <a href="#" class="noto bold big_btn">Принять участие в конкурсе!</a>
         </div>
       </div>
     </div>

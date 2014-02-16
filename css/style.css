@@ -1,15 +1,16 @@
 @import "../css/reset.css";
 @import "../css/flexslider.css";
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:300,400,700|Open+Sans:700italic,400,600,700,300&subset=latin,cyrillic);
+@import "http://s.4pda.to/fonts/PTSansCaption.css";
+@import "http://s.4pda.to/fonts/NotoSans.css";
 article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video{display:block}mark,rp,rt,ruby,summary,time{display:inline}
 /* Global properties ======================================================== */
 html {width:100%}
 
 body {
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: 'PT Sans Caption', Arial, sans-serif;
   font-size:18px;
   line-height:24px;
-  color:#333333;
+  color:#666666;
   min-width:1000px;
   -webkit-text-size-adjust: none;
   -ms-text-size-adjust:none;
@@ -285,6 +286,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
     -moz-box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     z-index: 10;
+    font-size: 16px;
+
   }
   .offer_text p{
     margin-bottom: 10px;
@@ -311,7 +314,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
     margin: -9px 0 0;
   }
   .prize_inner{
-    padding: 46px 0 0;
+    padding: 43px 0 0;
   }
 
   .prestigio_link{
@@ -457,14 +460,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
   }
 
   .dev_list{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 22px;
     background: #fff;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
     margin: 0 0px 0 -10px;
-    padding: 10px 10px 5px 20px;
+    padding: 12px 10px 5px 20px;
     position: relative;
     z-index: 10;
   }
@@ -481,14 +484,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
   }
   .dev_list dt{
     font-size: 18px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
+    color: #333333;
   }
   .dev_list.marker dt{
     background: url(../images/marker.png) 0 10px no-repeat;
     padding: 0 0 0 12px;
   }
   .dev_list dd{
-    margin-bottom: 17px;
+    margin-bottom: 22px;
   }
 
   .sm_col1{
@@ -820,7 +824,6 @@ h2,h3,h4{
   font-size: 48px;
   line-height: 56px;
   color:#fff;
-  font-style: italic;
   margin-bottom: 17px;
 }
 
@@ -829,7 +832,7 @@ h2,h3,h4{
   line-height: 42px;
   color:#333333;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 .title3{
   font-size: 22px;
@@ -843,11 +846,8 @@ h2,h3,h4{
 .t_ind2{ margin-bottom:px;}
 
 /*================================>> GOOGLE FONTS  <<========================================*/
-.ub{
-  font-family: 'Ubuntu', sans-serif;
-}
-.os{
-  font-family: 'Open Sans', sans-serif;
+.noto{
+  font-family: 'Noto Sans', Arial, sans-serif;
 }
 
 .lt{
