@@ -89,7 +89,6 @@ a {
   cursor:pointer;
 }
 a:hover{
-  color:#;
   text-decoration:none;
 }
 
@@ -594,6 +593,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', end
   .big_btn_wrap1 .big_btn{
     margin: 0 auto;
   }
+  .big_btn_wrap1{
+    padding-bottom: 148px;
+  }
   .big_btn_wrap:after{
     display: block;
     position: absolute;
@@ -717,11 +719,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa400', end
 
 /*=====================> Brands ========================*/
 .brands_box{
-  padding: 148px 0;
+  padding: 148px 0 0;
   background: url(../images/brands_bg.jpg) 50% 0 no-repeat;
 }
   .brand_cols{
-    margin-bottom: 193px;
+    padding-bottom: 193px;
   }
     .brand_cols .brand_col:first-child+.brand_col{
       min-height: 660px;
