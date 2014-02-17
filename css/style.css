@@ -414,15 +414,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
   }
   /*.device_description .device_row:first-child .title2{
     padding-top: 14px;
-  }*/
+  }
   .device_description .device_row:first-child .dev_col1{
     padding-top: 22px;
-  }
+  }*/
   .device_description .device_row:first-child+.device_row .dev_col1{
     float: right;
     padding: 0 0 0 20px;
     width: 300px;
+    margin: 0;
   } 
+  .device_description .device_row:first-child+.device_row .dev_col2{
+    overflow: hidden;
+    float: none;
+    margin-left: -10px;
+  }
   .device_description .device_row:first-child+.device_row .dev_list:after{
     width: 25px;
     height: 292px;
