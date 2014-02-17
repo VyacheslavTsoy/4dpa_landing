@@ -404,6 +404,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
     border-top: 1px solid #cccccc;
     padding: 68px 0;
   }
+  .device_row .main{
+    position: relative;
+  }
   
   .device_row.pad1{
     padding-top: 45px;
@@ -421,12 +424,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
   .device_description .device_row:first-child+.device_row .dev_col1{
     float: right;
     padding: 0 0 0 20px;
-    width: 300px;
+    width: 330px;
     margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
   } 
   .device_description .device_row:first-child+.device_row .dev_col2{
     overflow: hidden;
     float: none;
+    width: 620px;
     margin-left: -10px;
   }
   .device_description .device_row:first-child+.device_row .dev_list:after{
