@@ -386,7 +386,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
   
 /*=====================> Device Description <========================*/
 .device_description{
-  padding-bottom: 48px;
+  padding: 48px 0;
   position: relative;
   z-index: 20;
   background-color: #eeeeee;
@@ -404,9 +404,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ca7e', end
     border-top: 1px solid #cccccc;
     padding: 68px 0;
   }
-  .device_description .device_row:first-child .flexslider{
-    margin-top: -49px;
-  }
+  
   .device_row.pad1{
     padding-top: 45px;
   }
